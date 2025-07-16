@@ -5,3 +5,5 @@
 ccflags-y += -I$(srctree)/drivers/tty/serial/8250
 
 obj-$(CONFIG_DEVICE_MODULES_SERIAL_8250_MT6577)	+= 8250_mtk.o
+
+subdir-ccflags-y += -I$(srctree)/../kernel_device_modules-6.6/drivers/misc/mediatek/include
